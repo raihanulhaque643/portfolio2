@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="App">
+    <div className="container mx-auto">
       Hello world!
     </div>
   );
