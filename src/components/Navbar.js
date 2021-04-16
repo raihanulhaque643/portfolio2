@@ -20,9 +20,9 @@ export default function Navbar({ setToken, fixed }) {
           </svg>
         </button>
       </div>
-      <div className="flex-1 flex items-center justify-center sm:justify-between  sm:items-stretch sm:justify-start text-white font-semibold">
+      <div className="flex-1 flex items-center justify-center sm:justify-between  sm:items-stretch sm:justify-start text-white">
         <div className="flex-shrink-0 flex items-center">
-          <Link to="/" className="md:text-xl lg:text-3xl">
+          <Link to="/" className="md:text-lg lg:text-xl">
           Raihanul Haque
           </Link>
         </div>
