@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home'
-import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
@@ -16,9 +15,6 @@ function App() {
     <Router>
         <Navbar />
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
           <Route path="/portfolio">
             <Portfolio />
           </Route>

@@ -27,9 +27,6 @@ const Home = () => {
                         .start()
                     }}
                     />
-                {/* <span>Hi.</span>
-                <span>I'm Raihanul.</span>
-                <span>I build stuff with Javascript.</span> */}
                 </div>
             </div>
             <div className="flex flex-col w-full items-center justify-center">

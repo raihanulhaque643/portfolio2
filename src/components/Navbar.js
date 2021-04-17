@@ -28,7 +28,6 @@ export default function Navbar({ setToken, fixed }) {
         </div>
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
-            <Link to="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium md:text-lg lg:text-xl">About</Link>
 
             <Link to="/portfolio" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium md:text-lg lg:text-xl">Portfolio</Link>
 
@@ -45,7 +44,6 @@ export default function Navbar({ setToken, fixed }) {
 
     <div class="sm:hidden" id="mobile-menu">
     <div class="px-2 pt-2 pb-3 space-y-1">
-      <Link to="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</Link>
 
       <Link to="/portfolio" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Portfolio</Link>
 
