@@ -4,7 +4,7 @@ import db from '../firebase/firebase.js'
 
 const Portfolio = () => {
 
-    const [projects, setProjects] = useState()
+    let [projects, setProjects] = useState(null)
 
     // fetch all projects from firebase
     useEffect(() => {
