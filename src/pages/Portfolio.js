@@ -22,12 +22,13 @@ const Portfolio = () => {
     }, [])
 
     return (
-        <div className="min-w-screen max-w-auto min-h-screen max-height-auto bg-black">
+        <div className="min-h-screen max-h-auto bg-black">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 pb-4">
             {
                 projects &&
                 projects.map((project) => {
                     return <Project
-                    key={project.id}
+                    key={project.order}
                     name={project.name}
                     image={project.image}
                     repoFrontend={project.repoFrontend}
@@ -38,6 +39,7 @@ const Portfolio = () => {
                     />
                 })    
             }
+            </div>
         </div>
     )
 }
