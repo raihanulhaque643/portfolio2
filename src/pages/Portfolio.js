@@ -13,11 +13,11 @@ const Portfolio = () => {
             querySnapshot.forEach((doc) => {
                 myArray.push(doc.data())
             });
-        }).then(
+        }).then(() => {
             setProjects(myArray)
-        ).then(
+        }).then(() => {
             console.log(projects)
-        )
+        })
 
     }, [])
 
