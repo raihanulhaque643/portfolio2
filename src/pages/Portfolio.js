@@ -27,7 +27,7 @@ const Portfolio = () => {
             {
                 projects &&
                 projects.map((project) => {
-                    return <Project
+                return <Project
                     key={project.order}
                     name={project.name}
                     image={project.image}

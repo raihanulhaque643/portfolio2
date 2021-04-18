@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
+import React from 'react'
 
 function App() {
   return (
