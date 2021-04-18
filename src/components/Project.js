@@ -11,17 +11,17 @@ const Project = ({ name,  image, order, repoFrontend, repoBackend, email, passwo
 
     return (
         <animated.div style={props}>
-        <div className="flex-col min-h-96 max-h-auto bg-green-200 rounded mx-2 text-black font-semibold">
+        <div className="flex-col min-h-96 max-h-auto rounded mx-2 text-black text-white border-b sm:border-none">
             <div className="flex flex-row">
                 <img src={image} alt=""/>
             </div>
             <div className="flex flex-row px-2">
                 <div className="flex flex-col">
                     <div className="py-2 text-2xl font-extrabold">{name}</div>
-                <div className="py-2 hover:text-blue-700">Repo: <a target="_blank" href={repoFrontend}>{repoFrontend}</a></div>
+                <div className="py-2">Repo: <a className="hover:text-blue-700" target="_blank" href={repoFrontend}>{repoFrontend}</a></div>
                 {
                     repoBackend &&
-                    <div className="py-2  hover:text-blue-700">Repo Backend: <a target="_blank" href={repoBackend}>{repoBackend}</a></div>
+                    <div className="py-2">Repo Backend: <a className="hover:text-blue-700" target="_blank" href={repoBackend}>{repoBackend}</a></div>
                 }
                 <div className="">
                 {
@@ -29,9 +29,9 @@ const Project = ({ name,  image, order, repoFrontend, repoBackend, email, passwo
                         <div className="py-2">Credentials: {email}, {password}</div>
                     }
                 </div>
-                <div className="py-2 hover:text-blue-700">
+                <div className="py-2">
                     <span className="bg-red-700 rounded px-2 mr-2 text-white">Live:</span> 
-                        <a className="" target="_blank" href={url}>{url}</a>
+                        <a className="hover:text-blue-700" target="_blank" href={url}>{url}</a>
                 </div>
                 </div>
             </div>
