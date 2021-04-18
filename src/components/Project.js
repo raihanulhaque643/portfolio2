@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = ({ name,  image, order, repoFrontend, repoBackend, email, password, url}) => {
     return (
-        <div className="flex-col min-h-96 max-h-auto bg-green-300 rounded mx-4 text-black font-semibold">
+        <div className="flex-col min-h-96 max-h-auto bg-green-300 rounded mx-2 text-black font-semibold">
             <div className="flex flex-row">
                 <img src={image} alt=""/>
             </div>

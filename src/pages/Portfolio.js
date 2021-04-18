@@ -23,7 +23,7 @@ const Portfolio = () => {
 
     return (
         <div className="min-h-screen max-h-auto bg-black">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 pb-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4">
             {
                 projects &&
                 projects.map((project) => {
