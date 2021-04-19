@@ -1,7 +1,7 @@
 import React from 'react'
 import {useSpring, animated} from 'react-spring'
 
-const Project = ({ name,  image, order, repoFrontend, repoBackend, email, password, url}) => {
+const Project = ({ name,  image, order, repoFrontend, repoBackend, email, password, url, technology}) => {
 
     const props = useSpring({ 
         
@@ -23,12 +23,18 @@ const Project = ({ name,  image, order, repoFrontend, repoBackend, email, passwo
                     repoBackend &&
                     <div className="py-2">Repo Backend: <a className="hover:text-blue-700" target="_blank" rel="noreferrer" href={repoBackend}>{repoBackend}</a></div>
                 }
-                <div className="">
+                {
+                    technology && 
+                    <div className="py-2">Technologies: 
+                    <div className="font-semibold">
+                    {technology}
+                    </div>
+                    </div>
+                }
                 {
                         email && password &&
                         <div className="py-2">Credentials: {email}, {password}</div>
-                    }
-                </div>
+                }
                 <div className="py-2">
                     <span className="bg-red-700 rounded px-2 mr-2 text-white">Live:</span> 
                         <a className="hover:text-blue-700" target="_blank" rel="noreferrer" href={url}>{url}</a>

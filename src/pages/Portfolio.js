@@ -36,6 +36,7 @@ const Portfolio = () => {
                     email={project.email}
                     password={project.password}
                     url={project.url}
+                    technology={project.technology}
                     />
                 })    
             }
