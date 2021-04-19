@@ -18,10 +18,10 @@ const Project = ({ name,  image, order, repoFrontend, repoBackend, email, passwo
             <div className="flex flex-row px-2">
                 <div className="flex flex-col">
                     <div className="py-2 text-2xl font-extrabold">{name}</div>
-                <div className="py-2">Repo: <a className="hover:text-blue-700" target="_blank" href={repoFrontend}>{repoFrontend}</a></div>
+                <div className="py-2">Repo: <a className="hover:text-blue-700" target="_blank" rel="noreferrer" href={repoFrontend}>{repoFrontend}</a></div>
                 {
                     repoBackend &&
-                    <div className="py-2">Repo Backend: <a className="hover:text-blue-700" target="_blank" href={repoBackend}>{repoBackend}</a></div>
+                    <div className="py-2">Repo Backend: <a className="hover:text-blue-700" target="_blank" rel="noreferrer" href={repoBackend}>{repoBackend}</a></div>
                 }
                 <div className="">
                 {
@@ -31,7 +31,7 @@ const Project = ({ name,  image, order, repoFrontend, repoBackend, email, passwo
                 </div>
                 <div className="py-2">
                     <span className="bg-red-700 rounded px-2 mr-2 text-white">Live:</span> 
-                        <a className="hover:text-blue-700" target="_blank" href={url}>{url}</a>
+                        <a className="hover:text-blue-700" target="_blank" rel="noreferrer" href={url}>{url}</a>
                 </div>
                 </div>
             </div>
