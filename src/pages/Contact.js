@@ -29,13 +29,13 @@ const Contact = () => {
             </div>
             <div className="flex flex-col w-full items-center justify-center text-white text-5xl">
                 <animated.div style={props} className="flex flex-col">
-                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/raihanul.haque/">
+                    <a className="transform hover:rotate-45" target="_blank" rel="noreferrer" href="https://www.facebook.com/raihanul.haque/">
                         <FontAwesomeIcon className="my-4" icon={faFacebook} />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/raihanulhaque643">
+                    <a className="transform hover:rotate-45" target="_blank" rel="noreferrer" href="https://github.com/raihanulhaque643">
                     <FontAwesomeIcon className="my-4" icon={faGithub} />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/raihanul-haque-a310ba158/">
+                    <a className="transform hover:rotate-45" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/raihanul-haque-a310ba158/">
                     <FontAwesomeIcon className="my-4" icon={faLinkedin} />
                     </a>
                 </animated.div>
