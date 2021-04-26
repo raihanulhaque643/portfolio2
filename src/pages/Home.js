@@ -23,7 +23,7 @@ const Home = () => {
                         .typeString('<br>I am Raihanul.')
                         .pauseFor(2000)
                         // .deleteAll()
-                        .typeString('<br>I build stuff with Javascirpt!')
+                        .typeString('<br>I build stuff with Javascript!')
                         .start()
                     }}
                     />
